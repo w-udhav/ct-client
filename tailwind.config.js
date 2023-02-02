@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         mainBlack: "#242424",
         mainWhite: "#EAEAEA",
+        crimson: "#DC143C",
       },
       fontFamily: {
         satisfy: "'Satisfy', cursive",

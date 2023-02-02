@@ -1,13 +1,16 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "../Components/Header";
 import Home from "./Home";
 
 const Body = () => {
   return (
-    <div className="border h-full w-full">
+    <div className="border w-full">
       <Header />
       <div className="">
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </div>
   );
