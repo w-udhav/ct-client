@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <App />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </React.StrictMode>
 );

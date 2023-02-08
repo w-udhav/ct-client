@@ -1,14 +1,16 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 
-const ThoughtBox = () => {
+const ThoughtBox = ({ data }) => {
   const [state, setState] = useState(false);
   return (
     <motion.div
       layout
-      transition={{ layout: { duration: 0.3, type: "spring" } }}
+      transition={{
+        layout: { duration: 0.3, type: "spring" },
+      }}
       onClick={() => setState(!state)}
-      className={`border border-zinc-600 w-56 rounded-md  ease-in-out shadow-xl overflow-hidden ${
+      className={`border border-zinc-600 w-72 rounded-md ease-in-out shadow-xl overflow-hidden my-3 mr-3 cursor-pointer box-border ${
         state ? "shadow-black " : "hover:border-b-crimson hover:border-b-4"
       }`}
     >
@@ -16,10 +18,13 @@ const ThoughtBox = () => {
         layout="position"
         className="bg-zinc-600 rounded-t-md text-mainBlack text-center"
       >
-        time
+        {data.date}
       </motion.p>
-      <motion.p layout="position" className="p-2 text-2xl break-words">
-        Heading
+      <motion.p
+        layout="position"
+        className="p-2 text-2xl font-bold text-center break-words"
+      >
+        {data.name}
       </motion.p>
       {state && (
         <motion.div

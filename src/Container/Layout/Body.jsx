@@ -5,7 +5,7 @@ import Home from "./Home";
 
 const Body = () => {
   return (
-    <div className="border w-full">
+    <div className="w-full">
       <Header />
       <div className="">
         <Routes>

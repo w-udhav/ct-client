@@ -12,11 +12,15 @@
   background: #c9c9c9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #585858;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+::selection{
+  background-color: crimson;
 }
 
 body {
