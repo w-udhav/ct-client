@@ -27,8 +27,8 @@ const NewNote = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, width: 0, height: 0, x: -200 }}
-      className="my-3 mr-3 border border-zinc-600 w-80 rounded-md ease-in-out shadow-xl shadow-black z-10"
+      exit={{ opacity: 0, height: 0, x: -500 }}
+      className="relative my-3 mr-3 border border-zinc-600 w-80 rounded-md ease-in-out shadow-xl shadow-black z-10"
     >
       <p
         layout="position"

@@ -10,9 +10,9 @@ const ThoughtBox = ({ data }) => {
         layout: { duration: 0.3, type: "spring" },
       }}
       onClick={() => setState(!state)}
-      className={`border border-zinc-600 w-72 rounded-md ease-in-out shadow-xl overflow-hidden my-3 mr-3 cursor-pointer box-border ${
-        state ? "shadow-black " : "hover:border-b-crimson hover:border-b-4"
-      }`}
+      className={`border border-zinc-600 w-full mb-2 min-h-[max-content] rounded-md ease-in-out shadow-xl overflow-hidden  cursor-pointer box-border 
+        ${state ? "shadow-black " : "hover:border-b-crimson hover:border-b-4"}
+      `}
     >
       <motion.p
         layout="position"
